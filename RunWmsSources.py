@@ -33,7 +33,7 @@ newfile.close()
 #look for the starting line in the file: containing only wms URLS 
 with open("import_clean.js") as myFile:
     for num, line in enumerate(myFile, 1):
-        if "urls: ["  in line:
+        if "servers = ["  in line:
             #print(num)
             numstart=num
 #look for the End of WMS list in the import.json file
