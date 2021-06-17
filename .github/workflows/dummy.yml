@@ -1,8 +1,8 @@
-name: Dummy
-
+name: Do Something That Needs Scheduled
 on:
-  push:
-    branches: main
+  repository_dispatch:
+    types: do-something
+
 
 jobs:
   build:
